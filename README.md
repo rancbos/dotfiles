@@ -1,1 +1,3 @@
 JW's dotfiles.
+ls
+
