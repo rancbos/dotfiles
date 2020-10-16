@@ -1,8 +1,8 @@
 #! /bin/sh
 
 # Launch composite manager
-pgrep -u "$USER" picom >/dev/null || \
-    picom -b &
+#pgrep -u "$USER" picom >/dev/null || \
+#    picom -b &
 
 # Changing Wallpaper
 bash $HOME/dotfiles/script/wallpic.sh &
