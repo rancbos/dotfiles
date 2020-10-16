@@ -49,3 +49,7 @@ echo "Ending"
 echo "Make picom symlink"
 sudo ln -snf $HOME/dotfiles/picom/picom.conf $HOME/.config/picom/picom.conf
 echo "Ending"
+
+echo "Make rofi symlink"
+sudo ln -snf $HOME/dotfiles/rofi/config $HOME/.config/rofi/config
+echo "Ending"
