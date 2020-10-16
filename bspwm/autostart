@@ -1,0 +1,20 @@
+#! /bin/sh
+
+# Launch composite manager
+pgrep -u "$USER" picom >/dev/null || \
+    picom -b &
+
+# Changing Wallpaper
+bash $HOME/dotfiles/script/wallpic.sh &
+
+# Turn on  Tiddlywiki service
+tiddlywiki $HOME/Wiki --listen &
+
+# Turn on Polybar
+bash $HOME/dotfiles/polybar/nord/launch.sh &
+
+# Start Albert
+#albert &
+
+# Start Fcitx
+fcitx &
