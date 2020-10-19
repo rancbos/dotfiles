@@ -1,0 +1,4 @@
+# run: ln -s ~/.config/zsh/zshrc ~/.zshrc
+
+source $HOME/dotfiles/zsh/aliases.zsh
+source $HOME/dotfiles/zsh/zshenv.zsh
