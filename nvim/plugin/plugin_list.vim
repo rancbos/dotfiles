@@ -5,10 +5,8 @@
 call plug#begin('$HOME/dotfiles/nvim/plugged')
 
 " Pretty Dress
-"Plug 'bling/vim-bufferline'
 Plug 'ajmwagar/vim-deus'
 Plug 'Yggdroot/indentLine'
-"Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'glepnir/dashboard-nvim'
 
 
@@ -26,6 +24,9 @@ Plug 'ryanoasis/vim-devicons'
 Plug 'luochen1990/rainbow'
 Plug 'bagrat/vim-buffet'
 Plug 'wincent/terminus'
+Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'kristijanhusak/defx-icons'
+Plug 'kristijanhusak/defx-git'
 
 
 " Taglist

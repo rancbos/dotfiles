@@ -5,7 +5,6 @@ let g:coc_global_extensions = [
 	\ 'coc-actions',
 	\ 'coc-css',
 	\ 'coc-diagnostic',
-	\ 'coc-explorer',
 	\ 'coc-eslint',
 	\ 'coc-flutter-tools',
     \ 'coc-gitignore',
@@ -116,10 +115,6 @@ function! s:cocActionsOpenFromSelected(type) abort
 endfunction
 xmap <silent> <leader>a :<C-u>execute 'CocCommand actions.open ' . visualmode()<CR>
 nmap <silent> <leader>a :<C-u>set operatorfunc=<SID>cocActionsOpenFromSelected<CR>g@
-
-" coc-explorer
-nmap tt :CocCommand explorer<CR>
-
 
 " coc-snippets
 " Use <C-l> for trigger snippet expand.
