@@ -137,3 +137,14 @@ ex ()
     echo "'$1' is not a valid file"
   fi
 }
+
+########
+# Ranger
+########
+
+# Changing the editor or pager
+export VISUAL=nvim
+export PAGER=less
+
+# An indicator can be added to your shell's prompt to show when running in a shell spawned by ranger
+if [ -n "$RANGER_LEVEL" ]; then export PS1="[ranger]$PS1"; fi
