@@ -1,0 +1,48 @@
+confirmonquit: false
+disablestartuppopups: false
+git:
+  autofetch: true
+  branchlogcmd: git log --graph --color=always --abbrev-commit --decorate --date=relative
+    --pretty=medium {{branchName}} --
+  disableforcepushing: false
+  merging:
+    args: ""
+    manualcommit: false
+  overridegpg: false
+  paging:
+    colorarg: always
+    useconfig: diff-so-fancy
+  pull:
+    mode: merge
+  skiphookprefix: WIP
+gui:
+  commitlength:
+    show: true
+  expandfocusedsidepanel: false
+  mainpanelsplitmode: flexible
+  mouseevents: false
+  scrollheight: 2
+  scrollpastbottom: true
+  sidepanelwidth: 0.3333
+  skipstashwarning: true
+  skipunstagelinewarning: false
+  theme:
+    activebordercolor:
+    - yellow
+    - bold
+    inactivebordercolor:
+    - white
+    lighttheme: false
+    optionstextcolor:
+    - blue
+    selectedlinebgcolor:
+    - default
+    selectedrangebgcolor:
+    - blue
+quitontoplevelreturn: true
+reporting: undetermined
+startuppopupversion: 1
+update:
+  days: 14
+  method: prompt
+keybinding:
