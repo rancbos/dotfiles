@@ -17,8 +17,8 @@ hi NonText ctermfg=gray guifg=grey10
 " ===
 let g:indentLine_enabled = 1
 let g:indentLine_color_gui = '#e9d7df'
-let g:indentLine_char='┆'
-let g:indentLine_fileTypeExclude = ['dashboard', 'fzf', 'coc-explorer', 'tagbar', 'vista_kind', 'vista']
+let g:indentLine_char='¦'
+let g:indentLine_fileTypeExclude = ['dashboard', 'fzf', 'defx', 'tagbar', 'vista_kind', 'vista','help']
 let g:indentLine_concealcursor = 'niv'
 "let g:indentLine_showFirstIndentLevel =1
 
@@ -121,5 +121,6 @@ let g:buffet_tab_icon = "\uf46a"
 function! g:BuffetSetCustomColors()
   hi! BuffetCurrentBuffer guibg=#efafad guifg=#f34718
   hi! BuffetBuffer guibg=#1c2938 guifg=#983680
+
   hi! BuffetTab guibg=#93d5dc guifg=#96c24e
 endfunction
