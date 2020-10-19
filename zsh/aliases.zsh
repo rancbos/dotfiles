@@ -8,6 +8,7 @@
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 alias ra="ranger"
+alias lg="lazygit"
 alias n="neofetch"
 alias vi="nvim"
 alias code="code-insiders"

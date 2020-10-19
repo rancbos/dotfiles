@@ -30,13 +30,12 @@ fi
 ## fzf
 ##########
 
-export FZF_DEFAULT_COMMAND='fd'
 export FZF_COMPLETION_TRIGGER='\'
-export FZF_TMUX=1
-export FZF_TMUX_HEIGHT='80%'
-export fzf_preview_cmd='[[ $(file --mime {}) =~ binary ]] && echo {} is a binary file || (ccat --color=always {} || highlight -O ansi -l {} || cat {}) 2> /dev/null | head -500'
-
-
+export FZF_DEFAULT_COMMAND="fd --exclude={.git,.idea,.sass-cache,node_modules,build} --type f"
+export FZF_PREVIEW_COMMAND='[[ $(file --mime {}) =~ binary ]] && echo {} is a binary file || (ccat --color=always {} || highlight -O ansi -l {} || cat {}) 2> /dev/null | head -500'
+#export FZF_TMUX=1
+#export FZF_TMUX_HEIGHT='80%'
+#fzf --preview 'bat --style=numbers --color=always --line-range :500 {}'
 
 ##########
 ## Ranger
