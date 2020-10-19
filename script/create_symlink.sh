@@ -53,3 +53,8 @@ echo "Ending"
 echo "Make rofi symlink"
 sudo ln -snf $HOME/dotfiles/rofi/config $HOME/.config/rofi/config
 echo "Ending"
+
+
+echo "Make lazygit symlink"
+sudo ln -snf $HOME/dotfiles/lazygit/config.yml $HOME/.config/jesseduffield/lazygit/config.yml
+echo "Ending"
