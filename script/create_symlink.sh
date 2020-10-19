@@ -63,3 +63,11 @@ echo "Ending"
 echo "Make zsh symlink"
 sudo ln -snf $HOME/dotfiles/zsh/zshrc $HOME/.zshrc
 echo "Ending"
+
+
+echo "Make ranger symlink"
+sudo ln -snf $HOME/dotfiles/ranger/commands.py $HOME/.config/ranger/commands.py
+sudo ln -snf $HOME/dotfiles/ranger/rc.conf $HOME/.config/ranger/rc.conf
+sudo ln -snf $HOME/dotfiles/ranger/rifle.conf $HOME/.config/ranger/rifle.conf
+sudo ln -snf $HOME/dotfiles/ranger/scope.sh $HOME/.config/ranger/scope.sh
+echo "Ending"
