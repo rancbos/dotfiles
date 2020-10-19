@@ -230,7 +230,7 @@ set termguicolors       " Enable true color
 set number              " Show number
 set relativenumber      " Show relative number
 set ruler               " default status ruler
-"set cursorline          " 光标所在的当前行高亮
+set cursorline          " 光标所在的当前行高亮
 syntax enable           " 启用语法高亮度
 syntax on               " 打开语法高亮。自动识别代码，使用多种颜色显示
 set shortmess=aFc
