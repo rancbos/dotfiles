@@ -1,12 +1,3 @@
-# Path to your oh-my-zsh installation.
-export ZSH=$HOME/.oh-my-zsh
-
-plugins=(git autojump zsh-syntax-highlighting zsh-autosuggestions)
-
-[[ -s ~/.autojump/etc/profile.d/autojump.sh ]] && . ~/.autojump/etc/profile.d/autojump.sh
-
-
-
 ##########
 ## Theme
 ##########

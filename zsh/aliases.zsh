@@ -12,6 +12,11 @@ alias lg="lazygit"
 alias n="neofetch"
 alias vi="nvim"
 alias code="code-insiders"
-alias ls="lsd"
 alias cat="bat"
 alias qm="asciiquarium"
+
+
+alias ls="lsd"
+alias ll='lsd -l'
+alias la='lsd -a'
+alias lla='lsd -la'
