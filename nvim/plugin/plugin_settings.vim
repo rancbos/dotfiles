@@ -147,11 +147,42 @@ let g:defx_icons_parent_icon = ""
 
 
 
+" ===
+" === vim-clap
+" ===
+let g:clap_cache_directory = $DATA_PATH . '/clap'
+let g:clap_theme = 'material_design_dark'
+let g:clap_current_selection_sign= { 'text': '➤', 'texthl': "ClapCurrentSelectionSign", "linehl": "ClapCurrentSelection"}
+let g:clap_layout = { 'relative': 'editor' }
+let g:clap_enable_icon = 1
+let g:clap_search_box_border_style = 'curve'
+let g:clap_provider_grep_enable_icon = 1
+let g:clap_prompt_format = '%spinner%%forerunner_status% %provider_id%: '
+
+" A funtion to config highlight of ClapSymbol
+" when the background color is opactiy
+function! s:ClapSymbolHL() abort
+    let s:current_bgcolor = synIDattr(hlID("Normal"), "bg")
+    if s:current_bgcolor == ''
+        hi ClapSymbol guibg=NONE ctermbg=NONE
+    endif
+endfunction
+
+autocmd User ClapOnEnter call s:ClapSymbolHL()
+
+
+" ===
+" === goyo
+" ===
+map <LEADER>gy :Goyo<CR>
+
+
+
 
 " ===
 " === Vista.vim
 " ===
-noremap <c-v> :Vista coc<CR>
+noremap <c-v> :Vista<CR>
 noremap <c-t> :silent! Vista finder coc<CR>
 let g:vista_icon_indent = ["╰─▸ ", "├─▸ "]
 let g:vista_default_executive = 'ctags'
@@ -161,7 +192,6 @@ let g:vista#renderer#icons = {
 \   "function": "\uf794",
 \   "variable": "\uf71b",
 \  }
-
 
 " ===
 " === Undotree
@@ -180,8 +210,31 @@ function g:Undotree_CustomMap()
 	nmap <buffer> J 5<plug>UndotreePreviousState
 endfunc
 
+" ===
+" === rnvimr
+" ===
+nnoremap <silent> R :RnvimrToggle<CR><C-\><C-n>:RnvimrResize 0<CR>
+
+highlight link RnvimrNormal CursorLine
 
 
+
+
+" ===
+" === any-jump
+" ===
+nnoremap <leader>j :AnyJump<CR>
+let g:any_jump_window_width_ratio  = 0.8
+let g:any_jump_window_height_ratio = 0.9
+
+
+" ===
+" === wildfire.vim
+" ===
+" This selects the next closest text object.
+map <SPACE> <Plug>(wildfire-fuel)
+" This selects the previous closest text object.
+vmap <C-SPACE> <Plug>(wildfire-water)
 
 
 " ===

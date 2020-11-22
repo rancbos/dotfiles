@@ -12,15 +12,28 @@ let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 hi NonText ctermfg=gray guifg=grey10
 
 
+
+" ===
+" === vim-indent-guides
+" ===
+"let g:indent_guides_auto_colors = 1
+let g:indent_guides_enable_on_vim_startup = 1
+let g:indent_guides_start_level = 2
+let g:indent_guides_guide_size = 1
+let g:indent_guides_exclude_filetypes = ['dashboard', 'fzf', 'defx', 'tagbar', 'vista_kind', 'vista','help']
+
+
+
 " ===
 " === indentLine
 " ===
 let g:indentLine_enabled = 1
 let g:indentLine_color_gui = '#e9d7df'
 let g:indentLine_char='¦'
+"let g:indentLine_fileType = ['c', 'cpp', 'py' ]
 let g:indentLine_fileTypeExclude = ['dashboard', 'fzf', 'defx', 'tagbar', 'vista_kind', 'vista','help']
 let g:indentLine_concealcursor = 'niv'
-"let g:indentLine_showFirstIndentLevel =1
+let g:indentLine_showFirstIndentLevel =1
 
 
 " ===
@@ -105,7 +118,6 @@ augroup END
 " === rainbow
 " ===
 let g:rainbow_active = 1
-
 
 " ===
 " === vim-buffet

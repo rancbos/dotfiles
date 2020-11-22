@@ -4,74 +4,48 @@
 
 call plug#begin('$HOME/dotfiles/nvim/plugged')
 
-" Pretty Dress
-Plug 'ajmwagar/vim-deus'
-Plug 'Yggdroot/indentLine'
-Plug 'glepnir/dashboard-nvim'
+" Editor UI
+Plug 'ajmwagar/vim-deus'  " theme 1
+"Plug 'glepnir/zephyr-nvim'
+"Plug 'nvim-treesitter/nvim-treesitter' " theme 2
+
+Plug 'ryanoasis/vim-devicons'  " Provide the Icons
+Plug 'glepnir/dashboard-nvim'  " Startup Dashboard
+Plug 'hardcoreplayers/spaceline.vim'  " Beautiful statusline
+"Plug 'Yggdroot/indentLine'  " Indent Line
+Plug 'nathanaelkane/vim-indent-guides'  " Indent Line
+Plug 'RRethy/vim-hexokinase', { 'do': 'make hexokinase' }  " Displaying the colours 
+Plug 'RRethy/vim-illuminate'  " Automatically highlighting other uses of the current word under the cursor
+Plug 'luochen1990/rainbow'  " Rainbow paren
+Plug 'bagrat/vim-buffet'  " Buffer Tabline
 
 
-" Status line
-Plug 'hardcoreplayers/spaceline.vim'
-
-
-" General Highlighter
-Plug 'RRethy/vim-hexokinase', { 'do': 'make hexokinase' }
-Plug 'RRethy/vim-illuminate'
-
-
-" Other visual enhancement
-Plug 'ryanoasis/vim-devicons'
-Plug 'luochen1990/rainbow'
-Plug 'bagrat/vim-buffet'
-Plug 'wincent/terminus'
-Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'kristijanhusak/defx-icons'
-Plug 'kristijanhusak/defx-git'
-
-
-" Taglist
-Plug 'liuchengxu/vista.vim'
-
-
-" Undo Tree
-Plug 'mbbill/undotree'
-
-
-" File navigation
-Plug 'junegunn/fzf.vim'
-Plug 'Yggdroot/LeaderF', { 'do': './install.sh' }
-Plug 'kevinhwang91/rnvimr'
-Plug 'airblade/vim-rooter'
-Plug 'pechorin/any-jump.vim'
-
-
-
-
-
-" Editor Enhancement
-Plug 'jiangmiao/auto-pairs'
-Plug 'junegunn/vim-easy-align'
+" Editor Enhance
+Plug 'jiangmiao/auto-pairs'  " Insert or delete brackets, parens, quotes in pair.
+Plug 'junegunn/vim-easy-align'  " Alignment
 Plug 'tpope/vim-surround' " type yskw' to wrap the word with '' or type cs'` to change 'word' to `word`
+Plug 'mbbill/undotree'  " Visualizes undo history 
+Plug 'gcmt/wildfire.vim'
 
 
+" File Management
+Plug 'Shougo/defx.nvim', { 'do': ':UpdateRemotePlugins' }  " Dark powered file explorer implementation
+Plug 'kristijanhusak/defx-icons'  " Filetype icons for Defx
+Plug 'kristijanhusak/defx-git'  " Git status icons for Defx
+Plug 'kevinhwang91/rnvimr'
 
 
+" Find everything
+Plug 'liuchengxu/vista.vim'  " Viewer & Finder for LSP symbols and tags
+Plug 'junegunn/fzf.vim'
+Plug 'junegunn/goyo.vim'  " Distraction-free writing
+Plug 'liuchengxu/vim-clap'  " Find files word outline etc
+Plug 'pechorin/any-jump.vim'  " Jump to any definition and references
 
 
-
-
-
-
-" Mini Vim-APP
-Plug 'skywind3000/asynctasks.vim'
-Plug 'skywind3000/asyncrun.vim'
-
-
-" Autoformat
-"Plug 'Chiel92/vim-autoformat'
-
-" Auto Complete
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+" Coding
+Plug 'neoclide/coc.nvim', {'branch': 'release'}  " Autocompletaion
+"Plug 'tyru/caw.vim'  " Comment Plugins
 
 
 " C/C++
@@ -105,3 +79,6 @@ Plug 'dkarter/bullets.vim'
 
 
 call plug#end()
+
+
+

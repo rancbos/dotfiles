@@ -66,6 +66,7 @@ echo "Ending"
 
 
 echo "Make ranger symlink"
+sudo ln -snf $HOME/dotfiles/ranger/plugins $HOME/.config/ranger/plugins
 sudo ln -snf $HOME/dotfiles/ranger/commands.py $HOME/.config/ranger/commands.py
 sudo ln -snf $HOME/dotfiles/ranger/rc.conf $HOME/.config/ranger/rc.conf
 sudo ln -snf $HOME/dotfiles/ranger/rifle.conf $HOME/.config/ranger/rifle.conf
