@@ -1,5 +1,8 @@
 source ~/.zinit/bin/zinit.zsh
 
+# Theme
+zinit ice depth=1; zinit light romkatv/powerlevel10k
+
 # 使用 fzf 取代 zsh 的内置补全选择菜单！
 zinit light Aloxaf/fzf-tab
 
