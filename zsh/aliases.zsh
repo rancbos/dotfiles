@@ -12,7 +12,7 @@ alias lg="lazygit"
 alias n="neofetch"
 alias vi="nvim"
 alias svi="sudo nvim"
-alias code="code"
+alias ty="typora"
 alias cat="bat"
 alias qm="asciiquarium"
 
